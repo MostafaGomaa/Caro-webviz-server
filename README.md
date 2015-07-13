@@ -8,7 +8,7 @@ Packages that needs to be installed on each agent
 
 
 ###Installation:
-* Add you directory that contains the packages as a $ROS_PACKAGE_PATH in the .bashrc 
+* Add your directory that contains the packages as a $ROS_PACKAGE_PATH in the .bashrc 
 export ROS_PACKAGE_PATH=(~/YOUR_caro-webviz-server_DIR):$ROS_PACKAGE_PATH
 
 * Navigate to the package directory and rosmake each of the packages (here it is ~/Caro-webviz-server)
