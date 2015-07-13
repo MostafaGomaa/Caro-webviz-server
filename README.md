@@ -2,7 +2,7 @@
 Packages that needs to be installed on each agent
 
 ### Packages
- * [rosbridge_suite](http://wiki.ros.org/rosbridge_suite) is a [ROS meta-package](http://www.ros.org/wiki/catkin/conceptual_overview#Metapackages_and_the_Elimination_of_Stacks) including all the rosbridge packages.
+ * [rosbridge_suite](http://wiki.ros.org/rosbridge_suite) is a [ROS meta-package](http://www.ros.org/wiki/catkin/conceptual_overview#Metapackages_and_the_Elimination_of_Stacks) including all the rosbridge packages. Rosbridge provides a JSON API to ROS functionality for non-ROS programs
  
 * [tf2_web_republisher](http://wiki.ros.org/tf2_web_republisher) used to throttle and precompute tf transform information to be sent to via the rosbridge_suite to a ros3djs web client. 
 
