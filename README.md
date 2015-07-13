@@ -7,6 +7,16 @@ Packages that needs to be installed on each agent
 * [tf2_web_republisher](http://wiki.ros.org/tf2_web_republisher) used to throttle and precompute tf transform information to be sent to via the rosbridge_suite to a ros3djs web client. 
 
 
+
+###Checkout:
+clone using the recursive parameter to get all submodules.Then, Navigate to Rosbridge and checkout 'fuerte-devel' branch
+```
+git clone https://github.com/MostafaGomaa/Caro-webviz-server --recursive
+cd YOUR_PATH/Caro-webviz-server/rosbridge_suite
+git checkout fuerte-devel
+
+```
+
 ###Installation:
 * Add your directory that contains the packages as a $ROS_PACKAGE_PATH in the .bashrc
 ```
