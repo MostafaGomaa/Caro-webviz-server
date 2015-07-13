@@ -12,14 +12,14 @@ Packages that needs to be installed on each agent
 export ROS_PACKAGE_PATH=(~/YOUR_caro-webviz-server_DIR):$ROS_PACKAGE_PATH
 
 * Navigate to the package directory and rosmake each of the packages (here it is ~/Caro-webviz-server)
-cd ~/Caro-webviz-server/rosbridge_suite
+'cd ~/Caro-webviz-server/rosbridge_suite
 rosmake
 
 cd ~/Caro-webviz-server/tf2_web_republisher
-rosmake
+rosmake'
 
 ### Run:
 * run the rosbrigde and the tf2_web_republisher
-rosrun rosbridge_server rosbridge.py 
-rosrun tf2_web_republisher tf2_web_republisher
+'rosrun rosbridge_server rosbridge.py 
+rosrun tf2_web_republisher tf2_web_republisher'
 
