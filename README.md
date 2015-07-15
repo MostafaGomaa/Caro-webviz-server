@@ -33,7 +33,7 @@ rosmake
 ```
 
 ### Run:
-* run the rosbrigde and the tf2_web_republisher
+* run the rosbrigde and the tf2_web_republisher eacn on a separate  terminal.
 ```
 rosrun rosbridge_server rosbridge.py 
 rosrun tf2_web_republisher tf2_web_republisher
