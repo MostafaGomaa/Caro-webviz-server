@@ -33,31 +33,30 @@ rosmake
 ```
 
 ### Run the server:
-####----Case 1: Each agent's seperate PC:
-* Here we run an instances of the rosbridege_server and a tf2_web_republisher on each separate agent. 
-* Rosbridge_server will launch on port 9090 by default.
+####----Case 1: Each agent's separate PC:
+* simplly run an instances of the rosbridege_server and a tf2_web_republisher on each separate agent. Rosbridge_server will launch on port 9090 by default.
 ```
-rosrun rosbridge_server rosbridge.py 
+rosrun rosbridge_server rosbridge.py
 ```
 
-*Run the tf2_web_republisher on a new terminale
+*Run the tf2_web_republisher on a new terminal
 ```
 rosrun tf2_web_republisher tf2_web_republisher
 ```
 
 
 ####----Case 2:  All agent on the same PC:
-* Here we run three instances of the rosbridege_server, and a tf2_web_republisher for each. Each instance will communicate to a diffent RosCore that belongs to one of the agents.
-* We will launch each rosbridge_server on a diffenrnt port to enable the client to make the distinction between the three instances.
+*Here we run three instances of the rosbridege_server, and a tf2_web_republisher for each. Each rosbridge instance will communicate to a different RosCore that belongs to one of the agents.
+We will launch each rosbridge_server instance on a different port to enable the client to make the distinction between the three instances.
 
-*For each instance, open a new terminal window. Set the ROS master corresponding to an agents RosCore URI. Set the port rosparameter you would like to launch this rosbridge instance on. For example:
+/For each instance, open a new terminal window. Set the ROS master corresponding to an agents RosCore URI. Set the port rosparameter you would like to launch this rosbridge instance on. For example:
 ```
 export ROS_MASTER_URI= localhost:11311
 rosparam set /rosbridge/port 9090
-rosrun rosbridge_server rosbridge.py 
+rosrun rosbridge_server rosbridge.py
 ```
 
-*Run the tf2_web_republisher on a new terminale
+*Run the tf2_web_republisher on a new terminal
 ```
 export ROS_MASTER_URI= localhost:11311
 rosrun tf2_web_republisher tf2_web_republisher
