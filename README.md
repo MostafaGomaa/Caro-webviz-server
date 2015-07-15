@@ -17,6 +17,9 @@ git checkout fuerte-devel
 
 ```
 
+Change the line 33 in ../rosbridge_suite/rosbridge_library/src/rosbridge_library/internal/pngcompression.py
+to (from PIL import image).
+
 ###Installation:
 * Add your directory that contains the packages as a $ROS_PACKAGE_PATH in the .bashrc
 ```
