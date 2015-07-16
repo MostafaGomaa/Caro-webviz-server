@@ -36,13 +36,13 @@ rosmake
 ```
 
 ### Run the server:
-####----Case 1: Each agent running on separate PC:
+####----Case 1: Each agent is running on separatly:
 * simplly run an instances of the rosbridege_server and a tf2_web_republisher on each separate agent. Rosbridge_server will launch on port 9090 by default.
 ```
 rosrun rosbridge_server rosbridge.py
 ```
 
-* Run the tf2_web_republisher on a new terminal
+* Open a new terminal, Run the tf2_web_republisher.
 ```
 rosrun tf2_web_republisher tf2_web_republisher
 ```
@@ -52,15 +52,4 @@ rosrun tf2_web_republisher tf2_web_republisher
 * Here we run three instances of the rosbridege_server, and a tf2_web_republisher for each. Each rosbridge instance will communicate to a different RosCore that belongs to one of the agents.
 We will launch each rosbridge_server instance on a different port to enable the client to make the distinction between the three instances.
 
-/For each instance, open a new terminal window. Set the ROS master corresponding to an agents RosCore URI. Set the port rosparameter you would like to launch this rosbridge instance on. For example:
-```
-export ROS_MASTER_URI= localhost:11311
-rosparam set /rosbridge/port 9090
-rosrun rosbridge_server rosbridge.py
-```
- 
-* Run the tf2_web_republisher on a new terminal
-```
-export ROS_MASTER_URI= localhost:11311
-rosrun tf2_web_republisher tf2_web_republisher
-```
+simply run the script [launch_servers.bash] (launch_servers.bash)
