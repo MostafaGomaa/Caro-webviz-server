@@ -1,5 +1,5 @@
 ##This Scrpit launches 3 servers on the same computer to be run with along side the Gazebo simulation. 
-##It launches 3 ROSBRIDGE instances on three ports for each of the agent's RosCore, and a tf2_wed_republisher for each
+##Each server consists of a ROSBRIDGE instances on diffent port for each of the agent's RosCore, and a tf2_wed_republisher.
 
 
 OPEN_COMMAND="gnome-terminal"
